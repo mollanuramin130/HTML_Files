@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Number table print</title>
+   <script>
+    function table(){
+        var num=document.getElementById("num").value;
+        var i;
+        alert("Every things are correct?")
+        for( i=1;i<=10;i++){
+           //document.write(num+"x"+i+"="+num*i+"<br/>"); //its print the value in next page 
+           var pValue=document.getElementById("result");
+           pValue.innerHTML+=num+"x"+i+"="+num*i +"<br/>"; //its print the value in same page
+        }
+    }
+   </script>
+</head>
+<body>
+    <h1>Enter your number <br><input type="number" id="num"></h1>
+    <button type="submit" onclick="return table();">Submit</button>
+    <p id="result"></p>
+</body>
+</html>

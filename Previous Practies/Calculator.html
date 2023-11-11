@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<title> Calculator Using JS </title>
+	<script>
+	
+		function Addition()
+		{
+var firstNumber = parseInt(document.getElementById("first_no").value);
+var secondNumber = parseInt(document.getElementById("second_no").value);
+          
+             var Result = firstNumber + secondNumber;
+	alert("Addition of Two numbers is = " + Result);
+	return false;
+		}
+		
+		function Subtraction()
+		{
+var firstNumber = parseInt(document.getElementById("first_no").value);
+var secondNumber = parseInt(document.getElementById("second_no").value);
+          
+             var Result = firstNumber - secondNumber;
+	alert("Subtraction of Two numbers is = " + Result);
+	return false;
+		}
+		
+		function Multiplication(){
+			var firstNumber=parseInt(document.getElementById("first_no").value);
+			var secondNumber=parseInt(document.getElementById("second_no").value);
+		alert("Multiplication of two Number is = " + (firstNumber*secondNumber));
+			return false;
+		}
+		
+		function Division(){
+			var first=parseInt(document.getElementById("first_no").value);
+			var second=parseInt(document.getElementById("second_no").value);
+			alert("Division of two Number is = "+(first/second));
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<center>
+		<h1> Calculator Using Java Script </h1>
+	<table>
+		<tr>
+		       <td> First Number </td>
+		       <td> <input type="text" id="first_no"> </td>
+	              </tr>
+		<tr>
+		       <td> Second Number </td>
+		       <td> <input type="text" id="second_no"> </td>
+	              </tr>
+		<tr>
+	<td> <input type="submit" id="add" value="addition" 
+		onclick="return Addition();"></td>
+	<td> <input type="submit" id="sub" value="Subtraction"
+		onclick="return Subtraction();"></td>
+		</tr>
+	           <tr>
+	<td> <input type="submit" id="mul" value="Multiplication"
+			onclick="return Multiplication();"></td>
+	<td> <input type="submit" id="div" value="Division"
+			onclick="return Division();"></td>
+		</tr>
+	</table>
+	</center>
+</body>
+</html>
+
+
+
+
+
+

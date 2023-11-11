@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online Registration</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav style="display: inline;">
+        <ul style="display: inline;" id="navitem">
+
+            <a href="#tutorial">See video for help</a>     
+            <a href="#audio">Listen audio for help</a>     
+            <a href="#copy">Copyright verson</a>   
+            <a href="#contact">Contact us</a>  
+        </ul>
+    </nav>
+    <form>
+        <h2>Registration Form</h2>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="firstname">Enter first name</label>
+            <input type="text" name="firstname" id="firstname">
+            <br>
+            <br>
+
+            <label for="lastname">Enter last name</label>
+            <input type="text" name="lastname" id="lastname">
+            <br>
+            <br>
+
+            <label for="email">Enter email</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="dob">Enter Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <br>
+
+            <label for="gender">Select your gender</label>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Address Details</legend>
+            <label for="vill">Village</label>
+            <input type="text" name="vill" id="vill"><br><br>
+
+            <label for="post">post</label>
+            <input type="text" name="post" id="post"><br><br>
+
+            <label for="dict">Select Distict</label>
+            <select name="dict" id="dict" value="Distict">
+                <option value="south 24 parganas">South 24 Parganas</option>
+                <option value="north 24 parganas">North 24 Parganas</option>
+                <option value="howrah">Howrah</option>
+                <option value="nadia">Nadia</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="lang">Ticked Language :</label>
+            <input type="checkbox" name="bangla" id="lang">Bangla
+            <input type="checkbox" name="english" id="lang">English
+            <input type="checkbox" name="hindi" id="lang">Hindi
+            <input type="checkbox" name="urdu" id="lang">Urdu
+
+            <br><br>
+            <label for="exprience">Last Language exprience:</label>
+            <input type="number" id="exprience" value="0" max="50" min="0">
+
+            <br><br>
+            <label for="resume">Upload Resume : </label>
+            <input type="file" name="resume" id="resume">
+        </fieldset>
+
+        <label for="comment">Comment Here</label>
+        <textarea name="comment" id="comment" cols="10" rows="5" placeholder="Enter your comment"></textarea>
+        <br> <br>
+
+        
+        <img src="home.webp" alt="Home Page" height="20px" width="20px">
+        <input type="submit" value="Reset" id="reset">
+        <button>Submit</button>
+        
+    </form>
+<section id="tutorial">
+    <h2>Video tutorial</h2>
+    <table>
+        <tr>
+            <td><iframe width="790" height="331" src="https://www.youtube.com/embed/jnJC6ZGFrEI" title="Hai Nasha Tera Aisa Jo Utarta Nahi  Mohammad Faiz (Official Video Song) | nasha song | Ft. Himesh R" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+        </tr>
+    </table>
+</section>
+
+<br><br><br>
+
+<audio src="../mp3/03 Janam Janam.mp3" controls id="audio">Listen</audio>
+
+<br><br><br>
+
+    <footer id="copy">&copy;2023 Nur webside</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validation(){
+            var cart=document.getElementById("add-to-cart").value;
+            if(cart==true){
+                alert("Product added successfully");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Online Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product">
+            <img src="pexels-karolina-grabowska-4202325.jpg" alt="Product 1" size="50%">
+            <h2>Product 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$19.99</p>
+            <button type="submit" id="add-to-cart" onclick="return validation();">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <img src="pexels-karolina-grabowska-4210317.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$29.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+        
+        <!-- More product sections can be added here -->
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Nur Online Store</p>
+    </footer>
+</body>
+</html>

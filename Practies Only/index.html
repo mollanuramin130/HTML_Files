@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Effect Example</title>
+    <style>
+        #myElement {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <button id="fadeInButton">Fade In</button>
+    <button id="fadeOutButton">Fade Out</button>
+    <button id="fadeToggleButton">Toggle Fade</button>
+    <div id="myElement"></div>
+
+    <script>
+        $(document).ready(function() {
+            // Fade In
+            $("#fadeInButton").click(function() {
+                $("#myElement").fadeIn(1000); // Fade in over 1000 milliseconds (1 second)
+            });
+
+            // Fade Out
+            $("#fadeOutButton").click(function() {
+                $("#myElement").fadeOut(1000); // Fade out over 1000 milliseconds (1 second)
+            });
+
+            // Toggle Fade
+            $("#fadeToggleButton").click(function() {
+                $("#myElement").fadeToggle(1000); // Toggle fade effect over 1000 milliseconds (1 second)
+            });
+        });
+    </script>
+
+</body>
+</html>

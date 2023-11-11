@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+.nav-section{
+    height: 80px;
+    width: 100%;
+    background-color: #193718;
+    display: flex;
+    justify-content: space-evenly;
+    /* color: #ff8bff; */
+    color: white;
+    
+}
+.nav-item1{
+    display: flex;
+    width: 25%;
+}
+.nav-item2{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.nav-item2 option{
+    font-weight: 1100;
+}
+.nav-item3{
+    display: flex;
+    width: 25%;
+}
+.nav-item3 a{
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+}

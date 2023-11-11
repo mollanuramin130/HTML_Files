@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 50px;
+    overflow-x: none; 
+    position: relative;
+    background-image: linear-gradient(270deg, #008ae1 0, #0087e6 7.14%, #0084ea 14.29%, #0081ed 21.43%, #007ded 28.57%, #0079ec 35.71%, #0074e9 42.86%, #486ee5 50%, #6968df 57.14%, #8161d8 64.29%, #955acf 71.43%, #a553c5 78.57%, #b34bba 85.71%, #bf43ae 92.86%, #c93ca2 100%);
+}
+#navlist{
+    list-style-type: none;
+    position: relative;
+}
+.navcontainer{
+    background-image: linear-gradient(120deg, #009079 0, #009089 3.57%, #009099 7.14%, #0090a8 10.71%, #008fb6 14.29%, #008fc3 17.86%, #008dcf 21.43%, #008cd9 25%, #0089e1 28.57%, #0087e7 32.14%, #0083eb 35.71%, #007fed 39.29%, #007aed 42.86%, #0074ea 46.43%, #486ee5 50%, #6d67de 53.57%, #875fd5 57.14%, #9c57ca 60.71%, #ae4ebe 64.29%, #bc45b1 67.86%, #c83da3 71.43%, #d13594 75%, #d72f85 78.57%, #db2d75 82.14%, #dd2d66 85.71%, #dc3257 89.29%, #da3848 92.86%, #d64039 96.43%, #d0482b 100%);
+    /* background-image: linear-gradient(180deg, #a8b0ff 0, #788fff 25%, #486ee5 50%, #104eae 75%, #00317b 100%); */
+   /* background-color: #883d3d;*/
+} 
+#navlist{
+    margin: 15px;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content:space-between;
+}
+#navlogo{
+    color: white;
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+}
+#item{
+    display: flex;
+    gap: 20px;
+}
+#copyright{
+    background-color: black;
+    text-align: end;
+    color: white;
+    font-size: 1.5rem;
+}
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    padding: 2%;
+    box-shadow: 3px 3px 30px black;
+    /* border: 1px solid black;    */
+    gap: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+.firstitem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+.seconditem{
+    display: flex;
+    gap: 50px;
+
+}
+#golap{
+    border-radius: 20px;
+}
+#barfi{
+    border-radius: 20px;
+}
+#para1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px;
+}
+#para2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px;
+}
+.maindiv img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s linear 0s;
+
+}
